@@ -3,6 +3,7 @@ import Work from './components/Work'
 import Skills from './components/Skills'
 import About from './components/About'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         <Work />
         <Skills />
         <About />
-        <div id="contact" />
+        <Contact />
       </main>
 
       <Footer />
