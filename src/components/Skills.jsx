@@ -1,12 +1,15 @@
-import { Figma, PenTool, Code2, Images, Cpu, Layers } from 'lucide-react'
+import { Figma, Ruler, BarChart3, Palette, PenTool, Code2, Images, Cpu, Layers, FileText, Globe, Search } from 'lucide-react'
 
 const skills = [
-  { icon: Figma, name: 'Figma', desc: 'Wireframes, components, and prototyping' },
-  { icon: PenTool, name: 'Visual Design', desc: 'Brand systems, typography, and layout' },
-  { icon: Code2, name: 'Front-end', desc: 'React, HTML, CSS, and design systems' },
-  { icon: Images, name: 'Motion', desc: 'Micro-interactions and motion guidelines' },
-  { icon: Cpu, name: 'Strategy', desc: 'Discovery, UX strategy, and research' },
-  { icon: Layers, name: '3D & Assets', desc: 'Basic 3D, rendering, and asset pipelines' },
+  { icon: Figma, name: 'Figma', desc: 'Wireframes, components, interactive prototyping' },
+  { icon: Search, name: 'Design Research', desc: 'Ethnography, qualitative synthesis, heuristic evaluation' },
+  { icon: BarChart3, name: 'Analytics', desc: 'Stakeholder mapping, causal loops, insight frameworks' },
+  { icon: PenTool, name: 'UI/Visual Design', desc: 'Typography, layout, systems and motion' },
+  { icon: Code2, name: 'Web', desc: 'HTML/CSS basics, UI design collaboration' },
+  { icon: Layers, name: 'System Thinking', desc: 'Sustainable systems, socio-economic research' },
+  { icon: Images, name: 'Motion/Assets', desc: 'Rive basics, asset pipelines, micro-interactions' },
+  { icon: FileText, name: 'Documentation', desc: 'Case studies, research reports, presentations' },
+  { icon: Globe, name: 'Tools', desc: 'Photoshop, Illustrator, InDesign, Blender, DaVinci, Canva' },
 ]
 
 export default function Skills() {
@@ -14,7 +17,7 @@ export default function Skills() {
     <section id="skills" className="bg-[#080808] text-white py-24">
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight uppercase text-white/90">Skills</h2>
-        <p className="mt-4 text-zinc-400 max-w-2xl">A focused toolkit for shipping clear, usable, and elegant work.</p>
+        <p className="mt-4 text-zinc-400 max-w-2xl">A focused toolkit across research, systems, and interface design.</p>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map(({ icon: Icon, name, desc }) => (

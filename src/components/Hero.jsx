@@ -33,7 +33,7 @@ export default function Hero() {
           animate={{ opacity: 0.9, y: 0 }} 
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="uppercase tracking-widest text-sm text-zinc-400">
-          Portfolio
+          Aryan Gupta — Design Researcher / UI/UX Designer
         </motion.p>
 
         <motion.h1 
@@ -41,7 +41,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.05 }}
           className="mt-4 text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
-          Hi, I’m Your Name — I design
+          Hi, I’m Aryan — I design
           <span className="block mt-2 text-zinc-300 font-semibold">
             <AnimatePresence mode="wait">
               <motion.span 
@@ -62,7 +62,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
           className="mt-6 max-w-2xl text-zinc-400 text-lg leading-relaxed">
-          Modern, minimal, and strategy-led design across interfaces, visuals, and products.
+          Modern, minimal, and research-driven design across interfaces, visuals, and products.
         </motion.p>
 
         <motion.div 
@@ -73,10 +73,14 @@ export default function Hero() {
           <a href="#work" className="text-white/90 border border-white/10 hover:border-white/25 hover:text-white px-5 py-2.5 rounded-full transition-colors">
             View Work
           </a>
-          <a href="#" className="text-zinc-300 hover:text-white underline-offset-4 hover:underline transition-colors">
+          <a href="https://drive.google.com" target="_blank" rel="noreferrer" className="text-zinc-300 hover:text-white underline-offset-4 hover:underline transition-colors">
             Download Resume
           </a>
         </motion.div>
+
+        <div className="mt-8 text-sm text-zinc-500">
+          <span>Bhiwadi, Alwar, Rajasthan • English, Hindi</span>
+        </div>
       </div>
     </section>
   )

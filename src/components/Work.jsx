@@ -2,19 +2,46 @@ import { motion } from 'framer-motion'
 
 const projects = [
   {
-    title: 'Ecommerce Redesign',
-    type: 'Freelance',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1200&auto=format&fit=crop',
+    title: 'Specta Surfaces Website',
+    type: 'Internship — Medea Agency',
+    link: '#',
+    image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1600&auto=format&fit=crop',
+    desc: 'Led UI/UX design: layouts, wireframes, and infographics to improve engagement.'
   },
   {
-    title: 'AR Museum Guide',
-    type: 'Academic Project',
-    image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop',
+    title: 'Netflix — New Feature UX',
+    type: 'Case Study',
+    link: '#',
+    image: 'https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?q=80&w=1600&auto=format&fit=crop',
+    desc: 'Audit + research with surveys and journeys. Proposed group watch and smart filtering.'
   },
   {
-    title: 'Personal Finance App',
-    type: 'Personal',
-    image: 'https://images.unsplash.com/photo-1758519292135-2af0ad50f552?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxQZXJzb25hbCUyMEZpbmFuY2UlMjBBcHB8ZW58MHwwfHx8MTc2MzMxMjU5OXww&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
+    title: 'Industrial Textile Park — TexConnect',
+    type: 'Research / Systems',
+    link: '#',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600&auto=format&fit=crop',
+    desc: 'Digital framework integrating infrastructure, sustainability, compliance, and skills.'
+  },
+  {
+    title: 'Cross-Stitch Embroidery — Sangrur',
+    type: 'Craft Research',
+    link: '#',
+    image: 'https://images.unsplash.com/photo-1756361771453-6bce7c2cf539?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxDcm9zcy1TdGl0Y2glMjBFbWJyb2lkZXJ5JTIwJUUyJTgwJTk0JTIwU2FuZ3J1cnxlbnwwfDB8fHwxNzYzMzEzMTMwfDA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
+    desc: 'Ethnographic research, interviews, and causal loop analysis to support craft.'
+  },
+  {
+    title: 'Krishnam Restaurant System Study',
+    type: 'System Design Research',
+    link: '#',
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop',
+    desc: 'Mapped stakeholders and sustainability to inform strategic improvements.'
+  },
+  {
+    title: 'Canteen Redesign',
+    type: 'Service Design',
+    link: '#',
+    image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1600&auto=format&fit=crop',
+    desc: 'Enhanced communication, workflows, and journeys using design thinking.'
   },
 ]
 
@@ -23,13 +50,15 @@ export default function Work() {
     <section id="work" className="bg-[#080808] text-white py-24">
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight uppercase text-white/90">Work</h2>
-        <p className="mt-4 text-zinc-400 max-w-2xl">Selected projects spanning product design, visuals, and UX strategy.</p>
+        <p className="mt-4 text-zinc-400 max-w-2xl">Selected projects across design research, product, and visual systems.</p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => (
             <motion.a
               key={i}
-              href="#"
+              href={p.link}
+              target="_blank"
+              rel="noreferrer"
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -46,7 +75,7 @@ export default function Work() {
                 </div>
                 <div className="mt-3 h-px bg-white/10" />
                 <p className="mt-3 text-zinc-400 text-sm">
-                  Explore the process, flows, and outcomes behind this project.
+                  {p.desc}
                 </p>
               </div>
             </motion.a>
